@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MeViewController">
+            <connections>
+                <outlet property="me" destination="65v-GK-Z6a" id="1au-kA-jS8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="u=1379941912,2488648469&amp;fm=11&amp;gp=0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BLj-E5-O7v">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65v-GK-Z6a">
+                    <rect key="frame" x="108" y="247" width="159" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="点击登录/注册">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="reQ-Dx-ABl"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user_login_username@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="NoW-Fu-bDc">
+                    <rect key="frame" x="52" y="222" width="48" height="49"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKu-Q6-fMO">
+                    <rect key="frame" x="54" y="334" width="122" height="30"/>
+                    <state key="normal" title="我的收藏">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="collection:" destination="-1" eventType="touchUpInside" id="CPF-aC-EId"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BLj-E5-O7v" secondAttribute="trailing" id="2yX-oG-DQu"/>
+                <constraint firstItem="BLj-E5-O7v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="BY7-yY-XjK"/>
+                <constraint firstAttribute="bottom" secondItem="BLj-E5-O7v" secondAttribute="bottom" id="mVx-qO-AjA"/>
+                <constraint firstItem="BLj-E5-O7v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sso-qW-HkC"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="-64.5" y="251.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="u=1379941912,2488648469&amp;fm=11&amp;gp=0.jpg" width="169" height="300"/>
+        <image name="user_login_username@2x.png" width="16" height="16"/>
+    </resources>
+</document>

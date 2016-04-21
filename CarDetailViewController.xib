@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarDetailViewController">
+            <connections>
+                <outlet property="navigationBar" destination="wkL-eN-UUD" id="jwd-I3-1jg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkL-eN-UUD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="svU-C5-D9u"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.16164266930000001" green="0.47695492750000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <items>
+                        <navigationItem id="u9s-Np-Rdp">
+                            <barButtonItem key="leftBarButtonItem" title="返回" id="jkp-jH-ldH">
+                                <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <action selector="back:" destination="-1" id="v6F-dS-TZz"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wkL-eN-UUD" secondAttribute="trailing" id="HAh-xc-Vcq"/>
+                <constraint firstItem="wkL-eN-UUD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ttf-bn-90o"/>
+                <constraint firstItem="wkL-eN-UUD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qyX-Uw-pT5"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="250.5" y="93.5"/>
+        </view>
+    </objects>
+</document>
